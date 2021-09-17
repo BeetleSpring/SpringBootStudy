@@ -1,10 +1,10 @@
 package com.beetle.controller;
 
 import com.beetle.bean.Food;
+import com.beetle.bean.Vegetables;
 import com.beetle.configure.FoodConfigure;
+import com.beetle.configure.VegetablesConfigure;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,11 +18,13 @@ public class TestController {
 //    @Value("${food.prefix}")
 //    private String prefix;
 
+    @Autowired
+    private VegetablesConfigure vegetablesConfigure;
     @RequestMapping("/json")
-    public Food json(){
+    public Vegetables json(){
 
-        Food food = new Food(foodConfigure.getName(),foodConfigure.getPrefix());
-
-        return food;
+        //Food food = new Food(foodConfigure.getName(),foodConfigure.getPrefix());
+        Vegetables vegetables = new Vegetables(vegetablesConfigure.getPotato(),vegetablesConfigure.getEggplant(),vegetablesConfigure.getGreenPepper());
+        return vegetables;
     }
 }
