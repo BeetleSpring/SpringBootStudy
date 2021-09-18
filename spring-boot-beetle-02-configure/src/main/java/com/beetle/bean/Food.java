@@ -1,5 +1,9 @@
 package com.beetle.bean;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter@Setter
 public class Food {
     private String prefix;
     private String name;
@@ -9,19 +13,5 @@ public class Food {
         this.prefix = prefix;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPrefix() {
-        return prefix;
-    }
-
-    public void setPrefix(String prefix) {
-        this.prefix = prefix;
-    }
 }
