@@ -1,0 +1,57 @@
+#server:
+#  port: 8010
+
+
+jasypt:
+  encryptor:
+    password: 12345!@#
+
+info:
+  username: ENC(fXaDibU43L4r1AdyRp3Ptw==)
+  password: ENC(wv01RN435+v3bXT8ivEeFw==)
+
+
+#food.name=拌饭
+#food.prefix=老干妈老干爹
+food:
+  name: 拌饭拌饭
+  prefix: 老干妈老干爹
+
+
+vegetables:
+  greenPepper: 青椒
+  potato: 土豆
+  eggplant: 茄子
+#放数组
+  seasoning:
+    - 酱油
+    - 醋
+    - 盐
+
+  #流式语法
+#vegetables: {greenPepper: 青椒,potato: 土豆,eggplant: 茄子}
+spring:
+  profiles:
+    active: prod
+
+
+
+---
+#开发环境
+spring:
+  profiles: dev
+
+
+server:
+  port: 8090
+
+
+---
+#生产环境
+spring:
+  profiles: prod
+
+
+server:
+  port: 8010
+
