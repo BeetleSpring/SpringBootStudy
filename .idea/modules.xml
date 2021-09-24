@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-boot-beetle-01-helloworld/spring-boot-beetle-01-helloworld.iml" filepath="$PROJECT_DIR$/spring-boot-beetle-01-helloworld/spring-boot-beetle-01-helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-beetle-02-configure/spring-boot-beetle-02-configure.iml" filepath="$PROJECT_DIR$/spring-boot-beetle-02-configure/spring-boot-beetle-02-configure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-beetle-03-crud/spring-boot-beetle-03-crud.iml" filepath="$PROJECT_DIR$/spring-boot-beetle-03-crud/spring-boot-beetle-03-crud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-beetle-03-template/spring-boot-beetle-03-template.iml" filepath="$PROJECT_DIR$/spring-boot-beetle-03-template/spring-boot-beetle-03-template.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-beetle-demo.iml" filepath="$PROJECT_DIR$/spring-boot-beetle-demo.iml" />
     </modules>
   </component>

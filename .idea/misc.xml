@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/spring-boot-beetle-01-helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-beetle-02-configure/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-beetle-03-template/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-beetle-03-crud/pom.xml" />
       </list>
     </option>
   </component>

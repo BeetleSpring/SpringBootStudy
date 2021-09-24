@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script type="text/javascript" th:src="@{/webjars/jquery/3.6.0/jquery.js}"></script>
+
+</head>
+<body>
+    <h2>我的音乐你听吗</h2>
+    <br>
+
+        <table width="700px" border="1px">
+            <thead>
+                <tr align="center">
+                    <th>名字</th>
+                    <th>角色</th>
+                    <th>删除</th>
+                    <th>修改</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="music:${musicList}" align="center">
+                    <td th:text="${music.name}"></td>
+                    <td th:text="${music.label}"></td>
+<!--                    <td><a class="btn btn-primary" th:href="@{/music/delete(name=${music.name})}" role="button">删除</a></td>-->
+                    <td><button type="button" class="btn btn-primary" th:attr="del_url=@{/music/}+${music.name}" onclick="del_request(this)">删除</button></td>
+                    <td><a class="btn btn-primary" th:href="@{/music/updatePage(name=${music.name},label=${music.label})}" role="button">修改</a></td>
+                </tr>
+            </tbody>
+        </table>
+    <a class="btn btn-primary" href="/music/addPage" role="button">添加</a>
+
+
+    <form method="post" id="del_form">
+        <input type="hidden" name="_method" value="delete"/>
+    </form>
+
+<script>
+    function del_request(buttNode){ //为删除按钮绑定点击事件 使其发送delete请求
+         $("#del_form").prop("action",$(buttNode).attr("del_url")).submit();
+    }
+
+</script>
+
+</body>
+</html>
