@@ -2,7 +2,7 @@ package com.beetle.controller;
 
 import com.beetle.entity.Music;
 
-import com.beetle.service.MusicService;
+import com.beetle.service.MusicServiceImp1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,13 +14,13 @@ import java.util.List;
 public class MusicConteroller {
 
     @Autowired
-    MusicService service;
+    MusicServiceImp1 service;
 
 
     @ResponseBody
     @RequestMapping("music")
     public String index(){
-       List<Music> musicList = service.selectAll();
+       List<Music> musicList = service.list();
        for(Music music:musicList){
            System.out.println(music);
        }

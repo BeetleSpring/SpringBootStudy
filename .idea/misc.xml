@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/spring-boot-beetle-03-crud/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-beetle-04-orm-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-beetle-04-orm-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-beetle-04-orm-mybatisplus/pom.xml" />
       </list>
     </option>
   </component>
