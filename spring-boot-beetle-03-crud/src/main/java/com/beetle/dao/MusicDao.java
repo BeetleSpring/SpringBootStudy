@@ -1,6 +1,6 @@
 package com.beetle.dao;
 
-import com.beetle.entity.Music;
+import com.beetle.model.Music;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

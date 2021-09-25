@@ -1,7 +1,7 @@
 package com.beetle.service.imp;
 
 import com.beetle.dao.MusicDao;
-import com.beetle.entity.Music;
+import com.beetle.model.Music;
 import com.beetle.service.MusicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
