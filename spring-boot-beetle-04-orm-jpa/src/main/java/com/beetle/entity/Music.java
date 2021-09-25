@@ -1,4 +1,4 @@
-package com.beetle.model;
+package com.beetle.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

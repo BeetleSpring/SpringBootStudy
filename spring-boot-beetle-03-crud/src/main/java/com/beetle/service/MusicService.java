@@ -1,6 +1,6 @@
 package com.beetle.service;
 
-import com.beetle.model.Music;
+import com.beetle.entity.Music;
 
 import java.util.List;
 

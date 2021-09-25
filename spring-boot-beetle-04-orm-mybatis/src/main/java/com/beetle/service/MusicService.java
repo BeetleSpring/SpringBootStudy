@@ -1,7 +1,7 @@
 package com.beetle.service;
 
+import com.beetle.dao.MusicDao;
 import com.beetle.entity.Music;
-import com.beetle.repository.MusicRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,11 +11,11 @@ import java.util.List;
 public class MusicService {
 
     @Autowired
-    MusicRepository repository;
+    MusicDao dao;
 
-
-    public List<Music> getMusicList() {
-
-        return repository.findAll();
+    public List<Music> selectAll(){
+       return dao.selectMusics();
     }
+
+
 }
